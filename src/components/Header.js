@@ -12,13 +12,6 @@ const LinkStyled = styled(Link)`
 
 export default () => (
   <nav className="navbar is-transparent" role="navigation" aria-label="dropdown navigation">
-    <LinkStyled className="navbar-item" to="/">
-      {config.siteName}
-    </LinkStyled>
-    <LinkStyled className="navbar-item" to="/">Home</LinkStyled>
-    <LinkStyled className="navbar-item" to="/about">About</LinkStyled>
-    <LinkStyled className="navbar-item" to="/contact">Contact</LinkStyled>
-    <LinkStyled className="navbar-item" to="/cars">Cars</LinkStyled>
-    <LinkStyled className="navbar-item" to="/counter">Counter</LinkStyled>
+    <LinkStyled className="navbar-item" to="/"></LinkStyled>
   </nav>
 );
