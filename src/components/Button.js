@@ -7,12 +7,18 @@ const Wrapper = styled.div`
   width: ${props => props.width};
   height: ${props => props.height};
 }
+a {
+    display: inline-table;
+  }
 `;
 
-const Button = ({ buttonText, bgColor, width, height }) => {
+const Button = ({ buttonText, bgColor, width, height, text }) => {
     return (
         <Wrapper bgColor={bgColor} width={width} height={height}>
-            <a className="button has-text-white has-text-weight-bold">{buttonText}</a> 
+            <a className="button has-text-white has-text-weight-bold">
+            <div>{buttonText}</div>
+            <div>{text}</div>
+            </a> 
         </Wrapper>
     );
 };
