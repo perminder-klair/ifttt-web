@@ -8,8 +8,8 @@ import WatchTransaction from '../components/home/WatchTransaction';
 import Button from '../components/Button';
 
 const Header = styled.h1`
-  font-size: ${props => props.theme.headerFont};
-  font-weight: ${props => props.theme.fontWeightSize};
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem !important;
 `;
 
 export default () => (
@@ -17,11 +17,11 @@ export default () => (
     <Seo title="Home" description="Some description here." />
     <section className="section">
       <div className="container">
-        <Header className="title has-text-weight-semibold">Create trigger</Header>
+        <Header className="title has-text-weight-bold">Create trigger</Header>
+        <InputFiled labelText="trigger name" />
         <WatchTransaction />
-        <InputFiled labelText="name" />
-        <InputFiled labelText="from address" />
-        <InputFiled labelText="to address" />
+        {/* <InputFiled labelText="from address" />
+        <InputFiled labelText="to address" /> */}
         <Button buttonText="NEXT" bgColor="red" width="100%" height="51px" />
       </div>
     </section>
