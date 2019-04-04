@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Button from '../Button';
+import WatchButton from '../WatchButton';
 
 const Wrapper = styled.div`
   .column {
@@ -15,7 +15,7 @@ const WatchTransaction = () => {
       <label className="label is-uppercase">trigger type</label>
       <div className="columns is-flex is-marginless">
         <div className="column">
-          <Button
+          <WatchButton
             buttonText="Watch"
             text="contract"
             bgColor="#8662c7"
@@ -24,7 +24,7 @@ const WatchTransaction = () => {
           />
         </div>
         <div className="column">
-          <Button
+          <WatchButton
             buttonText="Watch"
             text="transaction"
             bgColor="#9fb3c8"
