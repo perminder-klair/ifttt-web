@@ -6,6 +6,7 @@ import Seo from '../components/Seo';
 import InputFiled from '../components/InputField';
 import WatchTransaction from '../components/home/WatchTransaction';
 import Button from '../components/Button';
+import Dropdown from '../components/Dropdown';
 
 const Header = styled.h1`
   margin-top: 1.1rem;
