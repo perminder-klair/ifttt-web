@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
+    margin-bottom: 1.1443rem;
     input {
         padding: 21px;
     }

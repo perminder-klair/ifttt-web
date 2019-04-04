@@ -6,6 +6,7 @@ import Seo from '../components/Seo';
 import InputFiled from '../components/InputField';
 import WatchTransaction from '../components/home/WatchTransaction';
 import Button from '../components/Button';
+import BottomButton from '../components/BottomButton';
 
 const Header = styled.h1`
   margin-top: 1.1rem;
@@ -22,7 +23,7 @@ export default () => (
         <WatchTransaction />
         {/* <InputFiled labelText="from address" />
         <InputFiled labelText="to address" /> */}
-        <Button buttonText="NEXT" bgColor="red" width="100%" height="51px" />
+        <BottomButton buttonText="NEXT" bgColor="red" width="100%" height="51px" />
       </div>
     </section>
   </Layout>

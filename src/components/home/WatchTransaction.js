@@ -1,17 +1,26 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import Button from '../Button';
+
+const Wrapper = styled.div`
+  .column {
+    padding: 0.75rem 0.2rem 0.75rem 0.2rem;
+  }
+`;
 
 const WatchTransaction = () => {
   return (
-    <div>
+    <Wrapper>
       <label className="label is-uppercase">trigger type</label>
-      <div className="columns is-flex">
+      <div className="columns is-flex is-marginless">
         <div className="column">
           <Button
             buttonText="Watch"
             text="contract"
             bgColor="#8662c7"
             width="100%"
+            height="5rem"
           />
         </div>
         <div className="column">
@@ -20,10 +29,11 @@ const WatchTransaction = () => {
             text="transaction"
             bgColor="#9fb3c8"
             width="100%"
+            height="5rem"
           />
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 };
 
