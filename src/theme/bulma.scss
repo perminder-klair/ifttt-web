@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,700');
+
+// Update Bulma's global variables
+$family-sans-serif: 'Muli', sans-serif;
+$family-secondary: 'Quicksand', sans-serif;
+$section-padding: 0.8823529411764706rem 0.8823529411764706rem;
+$body-size: 1rem; // default text size
+$title-size: 1.411764705882353rem; // size of headers
+$subtitle-size: 0.8235294117647058rem; //label size
+$background: #dae3ed;
+$primary: #112c44; // primary font color
+$purple: #221c53; // primary button color
+$info: #a0b5c9; // secondary button color
+$danger: #ef4c4d; // tertiary button color
+$dark: #221c53;
+$button-background-color: #ef4c4d; //default button background
+$button-color: white;
+$button-border-width: 0px;
+$weight-semibold: 400;
+$dropdown-content-background-color: #FFFFFF;
+$tag-background-color: transparent;
+
+@import '../../node_modules/bulma/bulma.sass';

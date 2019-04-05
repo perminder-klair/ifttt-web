@@ -3,14 +3,15 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import InputFiled from '../components/home/InputField';
+import DeleteTag from '../components/DeleteTag';
+import InputFiled from '../components/InputField';
 import WatchTransaction from '../components/home/WatchTransaction';
-import Button from '../components/home/Button';
-import theme from '../utils/theme';
+import Button from '../components/Button';
+import Title from '../components/Title';
 
-const Header = styled.h1`
-  font-size: ${props => props.theme.headerFont};
-  font-weight: ${props => props.theme.fontWeightSize};
+const Heading = styled.div`
+  justify-content: space-between;
+  margin-top: 1.1rem;
 `;
 
 export default () => (
@@ -18,11 +19,14 @@ export default () => (
     <Seo title="Home" description="Some description here." />
     <section className="section">
       <div className="container">
-        <Header className="title has-text-weight-semibold">Create trigger</Header>
-        <InputFiled labelText="name" />
+        <Heading className="is-flex">
+          <Title text="Create trigger" />
+          <DeleteTag />
+        </Heading>
+        <InputFiled labelText="trigger name" />
         <WatchTransaction />
-        <InputFiled labelText="from address" />
-        <InputFiled labelText="to address" />
+        {/* <InputFiled labelText="from address" />
+        <InputFiled labelText="to address" /> */}
         <Button buttonText="NEXT" bgColor="red" width="100%" height="51px" />
       </div>
     </section>
