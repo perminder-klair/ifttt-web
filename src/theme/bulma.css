@@ -3457,7 +3457,7 @@ a.box:active {
 
 .tag:not(body) {
   align-items: center;
-  background-color: #dae3ed;
+  background-color: transparent;
   border-radius: 4px;
   color: #4a4a4a;
   display: inline-flex;
@@ -3537,9 +3537,9 @@ a.box:active {
       height: 50%;
       width: 1px; }
     .tag:not(body).is-delete:hover, .tag:not(body).is-delete:focus {
-      background-color: #c9d6e5; }
+      background-color: rgba(0, 0, 0, 0); }
     .tag:not(body).is-delete:active {
-      background-color: #b8c9dc; }
+      background-color: rgba(0, 0, 0, 0); }
   .tag:not(body).is-rounded {
     border-radius: 290486px; }
 
@@ -3783,7 +3783,7 @@ a.tag:hover {
   z-index: 20; }
 
 .dropdown-content {
-  background-color: white;
+  background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   padding-bottom: 0.5rem;
