@@ -8,16 +8,16 @@ const Wrapper = styled.div`
     }
 `;
 
-const Dropdown = () => (
+const ArrowBack = () => (
     <div className="dropdown">
         <div className="dropdown-trigger">
             <Wrapper className="" aria-haspopup="false" aria-controls="dropdown-menu">
                 <span className="icon">
-                    <i className="fas fa-angle-down" aria-hidden="true"></i>
+                <i className="fas fa-chevron-left"></i>
                 </span>
             </Wrapper>
         </div>
     </div>
 );
 
-export default Dropdown;
+export default ArrowBack;
