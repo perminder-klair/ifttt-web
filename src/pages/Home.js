@@ -6,7 +6,7 @@ import Seo from '../components/Seo';
 import InputFiled from '../components/InputField';
 import WatchTransaction from '../components/home/WatchTransaction';
 import Button from '../components/Button';
-import InputNumber from '../components/InputNumber';
+import Nonce from '../components/Nonce';
 
 const Header = styled.h1`
   margin-top: 1.1rem;
@@ -24,7 +24,7 @@ export default () => (
         {/* <InputFiled labelText="from address" />
         <InputFiled labelText="to address" /> */}
         <Button buttonText="NEXT" bgColor="red" width="100%" height="51px" />
-        <InputNumber />
+        <Nonce />
       </div>
     </section>
   </Layout>
