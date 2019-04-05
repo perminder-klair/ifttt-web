@@ -4,25 +4,21 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import BackButton from '../components/BackButton';
 import Title from '../components/Title';
-import TextField from '../components/TextField';
-import Template from '../components/Template';
+import InputFiled from '../components/InputField';
 import Button from '../components/Button';
 
 export default () => (
     <Layout>
-        <Seo title="TemplateAbi" description="Some description here." />
+        <Seo title="TransactionCheck" description="Some description here." />
             <section className="section">
                 <div className="container">
                     <div className="is-flex">
                         <BackButton />
-                        <Title text="ABI Template" />
+                        <Title text="Set method values" />
                     </div>
-                    <TextField />
-                    <Title text="Pre built templates" />
-                    <Template />
-                    <Template />
-                    <Template />
-                    <Button buttonText="FINISH" />
+                    <InputFiled labelText="FROM ADDRESS" />
+                    <InputFiled labelText="TO ADDRESS" />
+                    <Button buttonText="SUBMIT" />
                 </div>
             </section>
     </Layout>

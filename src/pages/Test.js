@@ -5,7 +5,6 @@ import ArrowFarward from '../components/ArrowFarward';
 import ArrowUp from '../components/ArrowUp';
 import BackButton from '../components/BackButton';
 import Button from '../components/Button';
-import ContactForm from '../components/ContactForm';
 import Content from '../components/Content';
 import Delete from '../components/DeleteTag';
 import Dropdown from '../components/Dropdown';
@@ -25,7 +24,6 @@ export default () => (
         <ArrowFarward />
         <BackButton />
         <Button />
-        <ContactForm />
         <Content />
         <Delete />
         <Dropdown />
