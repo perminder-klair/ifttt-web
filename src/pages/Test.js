@@ -5,9 +5,8 @@ import ArrowFarward from '../components/ArrowFarward';
 import ArrowUp from '../components/ArrowUp';
 import BackButton from '../components/BackButton';
 import Button from '../components/Button';
-import ContactForm from '../components/ContactForm';
 import Content from '../components/Content';
-import Delete from '../components/DeleteTag';
+import Close from '../components/CloseTag';
 import Dropdown from '../components/Dropdown';
 import InputFiled from '../components/InputField';
 import InputNumber from '../components/InputNumber';
@@ -25,9 +24,8 @@ export default () => (
         <ArrowFarward />
         <BackButton />
         <Button />
-        <ContactForm />
         <Content />
-        <Delete />
+        <Close />
         <Dropdown />
         <InputFiled />
         <InputNumber />

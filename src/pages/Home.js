@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
-import DeleteTag from '../components/DeleteTag';
+import Close from '../components/CloseTag';
 import InputFiled from '../components/InputField';
-import WatchTransaction from '../components/home/WatchTransaction';
+import WatchTransaction from '../components/WatchTransaction';
 import Button from '../components/Button';
 import Title from '../components/Title';
 
@@ -21,7 +21,7 @@ export default () => (
       <div className="container">
         <Heading className="is-flex">
           <Title text="Create trigger" />
-          <DeleteTag />
+          <Close />
         </Heading>
         <InputFiled labelText="trigger name" />
         <WatchTransaction />
