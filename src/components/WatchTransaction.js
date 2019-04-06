@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import WatchButton from '../WatchButton';
+import WatchButton from './WatchButton';
 
 const Wrapper = styled.div`
   .column {

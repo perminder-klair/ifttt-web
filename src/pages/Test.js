@@ -6,7 +6,7 @@ import ArrowUp from '../components/ArrowUp';
 import BackButton from '../components/BackButton';
 import Button from '../components/Button';
 import Content from '../components/Content';
-import Delete from '../components/DeleteTag';
+import Close from '../components/CloseTag';
 import Dropdown from '../components/Dropdown';
 import InputFiled from '../components/InputField';
 import InputNumber from '../components/InputNumber';
@@ -25,7 +25,7 @@ export default () => (
         <BackButton />
         <Button />
         <Content />
-        <Delete />
+        <Close />
         <Dropdown />
         <InputFiled />
         <InputNumber />
