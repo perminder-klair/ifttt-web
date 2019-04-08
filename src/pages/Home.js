@@ -3,14 +3,15 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import Close from '../components/CloseTag';
 import InputFiled from '../components/InputField';
-import WatchTransaction from '../components/home/WatchTransaction';
+import WatchTransaction from '../components/WatchTransaction';
 import Button from '../components/Button';
-import InputNumber from '../components/InputNumber';
+import Title from '../components/Title';
 
-const Header = styled.h1`
+const Heading = styled.div`
+  justify-content: space-between;
   margin-top: 1.1rem;
-  margin-bottom: 1.1rem !important;
 `;
 
 export default () => (
@@ -18,13 +19,15 @@ export default () => (
     <Seo title="Home" description="Some description here." />
     <section className="section">
       <div className="container">
-        <Header className="title has-text-weight-bold">Create trigger</Header>
+        <Heading className="is-flex">
+          <Title text="Create trigger" />
+          <Close />
+        </Heading>
         <InputFiled labelText="trigger name" />
         <WatchTransaction />
         {/* <InputFiled labelText="from address" />
         <InputFiled labelText="to address" /> */}
         <Button buttonText="NEXT" bgColor="red" width="100%" height="51px" />
-        <InputNumber />
       </div>
     </section>
   </Layout>

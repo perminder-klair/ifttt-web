@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import theme, { GlobalStyle } from './utils/theme';
 import apolloClient, { persistor } from './utils/apolloClient';
 
-import { Home, Error404 } from './pages';
+import { Home, TemplateAbi, AbiFunctions, Filter, TransactionCheck, Test, Error404 } from './pages';
 import './theme/bulma.css';
 
 class App extends React.Component {
@@ -31,6 +31,11 @@ class App extends React.Component {
             <BrowserRouter>
               <Switch>
                 <Route exact path="/" component={Home} />
+                <Route exact path="/TemplateAbi" component={TemplateAbi} />
+                <Route exact path="/AbiFunctions" component={AbiFunctions} />
+                <Route exact path="/Filter" component={Filter} />
+                <Route exact path="/TransactionCheck" component={TransactionCheck} />
+                <Route exact path="/Test" component={Test} />
                 <Route component={Error404} />
               </Switch>
             </BrowserRouter>

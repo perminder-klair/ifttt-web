@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import WatchButton from '../WatchButton';
+import WatchButton from './WatchButton';
 
 const Wrapper = styled.div`
   .column {
-    padding: 0.75rem 0.2rem 0.75rem 0.2rem;
+    padding: 0rem 0.2rem 0.75rem 0.2rem;
   }
 `;
 
 const WatchTransaction = () => {
   return (
     <Wrapper>
-      <label className="label is-uppercase">trigger type</label>
+      <p className="label is-uppercase">trigger type</p>
       <div className="columns is-flex is-marginless">
         <div className="column">
           <WatchButton
